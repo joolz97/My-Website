@@ -36,7 +36,7 @@ ul{
 
 /* header */
 header{
-    background:#ffffff;
+    background:#e6e6e6;
     color:#181B5B;
     padding-top:30px;
     min-height:70px;
@@ -44,7 +44,7 @@ header{
 }
 
 header a{
-    color:##181B5B;
+    color:#181B5B;
     text-decoration:none;
     text-transform:uppercase;
     font-size:16px;
@@ -99,28 +99,6 @@ header a:hover{
     font-size:20px;
 }
 
-/* newsletter 
-#newsletter{
-    padding:15px;
-    color:#ffffff;
-    background:#35424a;
-}
-
-#newsletter h1{
-    float:left;
-}
-
-#newsletter form{
-    float:right;
-    margin-top:15px;
-}
-
-#newsletter input[type="email"]{
-    padding:4px;
-    height:25px;
-    width:250px;
-}
-*/
 
 /* boxes */
 #boxes{
@@ -139,13 +117,24 @@ header a:hover{
 #boxes .box img{
     width:400px;
     padding:10px;
+    opacity: 1;
+    filter: alpha(opacity=100);
 }
 
 #boxes .me img{
-    float:center;
+    float:left;
     text-align:center;
     width:40%;
-    padding: 60px;
+    padding:60px;
+}
+
+#boxes .box .img-top{
+    display:none;
+}
+
+#boxes .box img:hover {
+    opacity: 0.3;;
+    filter: alpha(opacity=30);
 }
 
 /* sidebar */
