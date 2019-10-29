@@ -2,7 +2,8 @@ body{
     font: 15px/1.5 Arial, Helvetica, sans-serif;
     padding: 0;
     margin: 0;
-    background-color:#f4f4f4;
+    background:url('../img/background4.png') no-repeat;
+    /*background-color:#f4f4f4; */
 }
 
 /* global */
@@ -28,7 +29,8 @@ ul{
 
 .dark{
     padding:15px;
-    background:#35424a;
+    box-align: center;
+    background:#007099;
     color:#ffffff;
     margin-top:10px;
     margin-bottom:10px;
@@ -36,11 +38,13 @@ ul{
 
 /* header */
 header{
-    background:#e6e6e6;
+    background:#ffffff;
     color:#181B5B;
+    border-bottom:#9f2842 3px solid;
     padding-top:30px;
+    padding-left:90px;
+    padding-right:90px;
     min-height:70px;
-    /*border-bottom:#e8491d 3px solid;*/
 }
 
 header a{
@@ -71,7 +75,7 @@ header nav{
 }
 
 header .highlight, header .current a{
-    color:rgb(97, 97, 97);
+    color:#9f2842;
     font-weight:bold;
 }
 
@@ -103,7 +107,11 @@ header a:hover{
 /* boxes */
 #boxes{
     /*margin-top:20px;*/
-    background: #e6e6e6;
+    background-image:"../img/background.jpg";
+    padding-left:20px;
+    padding-right:20px;
+    padding-top:40px;
+    padding-bottom:40px;
 }
 
 #boxes .box{
@@ -111,21 +119,23 @@ header a:hover{
     text-align:center;
     width:30%;
     margin: auto;
-    padding: 10px;
+    padding: 20px;
 }
 
 #boxes .box img{
     width:400px;
-    padding:10px;
     opacity: 1;
-    filter: alpha(opacity=100);
+    filter: brightness(0.8);
+    /*filter: alpha(opacity=100);*/
+    border:#9f2842 5px solid;
 }
 
 #boxes .me img{
     float:left;
     text-align:center;
-    width:40%;
+    width:400px;
     padding:60px;
+    border-radius: 50%;
 }
 
 #boxes .box .img-top{
@@ -133,8 +143,31 @@ header a:hover{
 }
 
 #boxes .box img:hover {
-    opacity: 0.3;;
-    filter: alpha(opacity=30);
+    filter: brightness(1.1);
+    /*opacity: 0.3;*/
+    filter: alpha(opacity=60);
+}
+
+/* works */
+#works{
+    padding-left:20px;
+    padding-right:20px;
+    padding-top:40px;
+    padding-bottom:40px;
+}
+
+#works .work{
+    float:left;
+    text-align:center;
+    width:30%;
+    margin: auto;
+    padding: 10px;
+}
+
+#works .work img{
+    width:400px;
+    opacity: 1;
+    border:#9f2842 5px solid;
 }
 
 /* sidebar */
