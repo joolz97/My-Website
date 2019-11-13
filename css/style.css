@@ -166,7 +166,7 @@ header a:hover{
 }
 
 #works .work img{
-    width:400px;
+    width:90%;
     opacity: 1;
     border:#9f2842 5px solid;
 }
@@ -217,6 +217,7 @@ footer{
     #newsletter h1,
     #newsletter form,
     #boxes .box,
+    #works .work,
     article#main-col,
     aside#sidebar{
         float:none;
