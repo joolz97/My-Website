@@ -3,8 +3,8 @@ body{
     padding: 0;
     padding-bottom: 60px;
     margin: 0;
-    background:url('../img/background4.png') no-repeat;
-    /*background-color:#f4f4f4; */
+    background:url('../img/treecirclesrepeat.png') repeat; 
+    /* background-color:#242424; */
 }
 
 /* global */
@@ -28,22 +28,23 @@ ul{
 }
 
 .dark{
-    padding:15px;
-    box-align: center;
-    background:#007099;
-    color:#ffffff;
+    padding:100px;
+    color:#000000;
     margin-top:10px;
     margin-bottom:10px;
+    height: 400px;
+    width: 400px;
+    display: inline-block;
 }
 
 /* header */
 header{
     background:#ffffff;
     color:#181B5B;
-    border-bottom:#9f2842 3px solid;
+    border-bottom:#c77241 3px solid;
     padding-top:30px;
     padding-left:90px;
-    padding-right:90px;
+    padding-right:170px;
     min-height:70px;
 }
 
@@ -58,7 +59,7 @@ header li{
     float:left;
     display:inline;
     /* top right bottom left */
-    padding: 0 20px 0 20px;
+    padding: 30px 20px 0 20px;
 }
 
 header #branding{
@@ -75,7 +76,7 @@ header nav{
 }
 
 header .highlight, header .current a{
-    color:#9f2842;
+    color:#c77241;
     font-weight:bold;
 }
 
@@ -126,9 +127,8 @@ header a:hover{
 #boxes .box img{
     width:90%;
     opacity: 1;
-    filter: brightness(0.8);
     /*filter: alpha(opacity=100);*/
-    border:#9f2842 5px solid;
+    /* border:#c77241 5px solid; */
 }
 
 #boxes .me img{
@@ -144,9 +144,7 @@ header a:hover{
 }
 
 #boxes .box img:hover {
-    filter: brightness(1.1);
-    /*opacity: 0.3;*/
-    filter: alpha(opacity=60);
+    filter: grayscale(1);
 }
 
 /* works */
@@ -173,14 +171,17 @@ header a:hover{
 
 /* sidebar */
 aside#sidebar{
-    float:right;
-    width:30%;
-    margin-top:50px;
+    float:left;
+    height: 400px;
+    width: 400px;
+    margin-left: 100px;
+    background-color: #ffffffde;
+    border-radius: 50%;
+    display: inline-block;
 }
 
 aside#sidebar .quote input, aside#sidebar .quote textarea{
     width:90%;
-    padding:5px;
 }
 
 /* main-col */
@@ -199,13 +200,13 @@ ul#services li{
 }
 
 footer{
-    padding:20px;
+    padding:8px;
     position: fixed;
     left: 0;
     bottom: 0;
     width: 100%;
     color:#181B5B;
-    background-color:#c5c5c5;
+    background-color:#ffffff;
     text-align:center;
 }
 
