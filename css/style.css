@@ -1,10 +1,34 @@
-body{
+:root {
+    --main-accent: #c77241;
+    --main-bg: #ffffff;
+    --main-text: #000000;
+    --main-footer-text: #181B5B;
+    --main-bg-alt: #F4EDEA;
+}
+
+html, body {
+    height: 100%;
+}
+body {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
     font: 15px/1.5 Arial, Helvetica, sans-serif;
     padding: 0;
-    padding-bottom: 60px;
     margin: 0;
-    background: #F4EDEA;
+    background: var(--main-bg-alt);
     /* background-color:#242424; */
+}
+
+/* footer */
+footer {
+    position: static;
+    padding:0px;
+    color: var(--main-footer-text);
+    background: var(--main-bg);
+    border-top: var(--main-accent) 3px solid;
+    text-align:center;
+    margin-top: auto; /* Push footer to the bottom */
 }
 
 /* global */
@@ -25,9 +49,9 @@ ul{
 
 /* header */
 header{
-    background:#ffffff;
-    color:#000000;
-    border-bottom:#c77241 3px solid;
+    background: var(--main-bg);
+    color: var(--main-text);
+    border-bottom: var(--main-accent) 3px solid;
     padding-top:10px;
     padding-bottom:10px;
     padding-left:40px;
@@ -85,39 +109,19 @@ header li{
 }
 
 header .highlight, header .current a{
-    color:#c77241;
+    color: var(--main-accent);
     font-weight:bold;
 }
 
 header a{
-    color: #000000;
+    color: var(--main-text);
     text-decoration: none;
 }
 
 header a:hover{
-    color:#c77241;
+    color: var(--main-accent);
     font-weight:bold;
 }
-
-/* showcase */
-#showcase{
-    min-height:400px;
-    /* background:url('../img/showcase.jpg') no-repeat -20px; */
-    background: #000000;
-    text-align:center;
-    color:#ffffff;
-}
-
-#showcase h1{
-    margin-top:100px;
-    font-size:55px;
-    margin-bottom:10px;
-}
-
-#showcase p{
-    font-size:20px;
-}
-
 
 /* boxes */
 #boxes{
@@ -145,18 +149,13 @@ header a:hover{
     /* border:#c77241 5px solid; */
 }
 
-#boxes .me img{
+/* #boxes .me img{
     float:left;
     text-align:center;
     width:300px;
     padding:60px;
     border-radius: 50%;
-}
-
-#boxes .box .img-top{
-    display:none;
-}
-
+} */
 #boxes .box img:hover {
     filter: grayscale(1);
 }
@@ -181,18 +180,6 @@ header a:hover{
     width:90%;
     opacity: 1;
     border:#9f2842 5px solid;
-}
-
-footer{
-    position: fixed;
-    left: 0;
-    bottom: 0;
-    padding:8px;
-    width: 100%;
-    color:#181B5B;
-    background:#ffffff;
-    border-top:#c77241 3px solid;
-    text-align:center;
 }
 
 /* About page flex layout */
@@ -284,9 +271,5 @@ footer{
 
     #boxes .box{
         width:80%;
-    }
-
-    #showcase h1{
-        margin-top:40px;
     }
 }
