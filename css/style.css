@@ -51,52 +51,47 @@ header{
     background: var(--main-color-header);
     color: var(--main-color-text);
     border-bottom: var(--main-color-accent) 3px solid;
-    padding-top:10px;
-    padding-bottom:10px;
-    padding-left:40px;
-    padding-right:40px;
-    min-height:60px;
-    position: sticky;
+    min-height:64px;
+    position: fixed;
     top: 0;
+    width: 100%;
     z-index: 10;
 }
 
 header .container {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    padding: 0;
     position: relative;
+    width: 95%;
+    padding-top:10px;
+    padding-bottom:10px;
+    padding-left:40px;
+    padding-right:40px;
+    height: 100px; /* adjust as needed for your header height */
 }
 
 header nav {
     position: absolute;
-    left: 0;
     top: 50%;
     transform: translateY(-50%);
-    margin: 0;
-    z-index: 1;
+    display: flex;
+    align-items: center;
 }
 
 header #branding {
-    flex: 0 1 auto;
-    position: static;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
     display: flex;
     flex-direction: row;
-    align-items: center;
     justify-content: center;
+    align-items: center;
     text-align: center;
     margin: 0;
     padding: 0;
 }
 
-header #branding h1{
-    font-size: 1.1em;
-    margin: 0;
-}
-
 header #branding img.animated-gif{
-    height: 48px;
+    height: 80px;
     width: auto;
     margin: 0 10px 0 0;
     display: block;
@@ -107,11 +102,12 @@ header li{
     display: inline-block;
     padding: 0 16px 0 0;
     text-decoration: none;
-    text-transform: uppercase;
+    font-size: 20px;
+    /* text-transform: uppercase; */
 }
 
 header .highlight, header .current a{
-    color: var(--main-color-accent);
+    color: var(--main-color-text);
     font-weight:bold;
 }
 
@@ -123,6 +119,11 @@ header a{
 header a:hover{
     color: var(--main-color-accent);
     font-weight:bold;
+}
+
+#header-placeholder {
+    width: 100%;
+    height: 120px; /* Adjust as needed */
 }
 
 #intro-message {
