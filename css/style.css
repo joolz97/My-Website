@@ -1,8 +1,9 @@
 :root {
-    --main-color-background: #F4EDEA;
-    --main-color-accent: #c77241;
-    --main-color-header: #ffffff;
-    --main-color-text: #000000;
+    --main-color-background: #f7f7f7;
+    --main-color-background-alt: #742424;
+    --main-color-accent: #6b191d;
+    --main-color-header: #f7f7f7;
+    --main-color-text: # ;
     --main-color-text-alt: #181B5B;
     --main-radius: 20px;
     --main-shadow: 0 2px 8px rgba(0,0,0,0.05);
@@ -20,7 +21,7 @@ body {
     font: var(--main-font);
     padding: 0;
     margin: 0;
-    background: var(--main-color-background);
+    background: var(--main-color-background-alt);
     /* background-color:#242424; */
 }
 
@@ -127,18 +128,25 @@ header a:hover{
 }
 
 #intro-message {
+    color: var(--main-color-text);
     position: fixed;
     top: 0;
     z-index: 0;
-    left: 50%;
-    transform: translateX(-50%);
-    padding-top: 150px;
+    /* left: 50%;
+    transform: translateX(-50%); */
+    padding-top: 120px;
     text-align: center; 
     margin-top: 0px;
     margin-bottom: 16px;
-    width: 70%;
+    width: 100%;
 }
 
+#intro-message img {
+    width: 100%;
+    height: auto;
+    /*max-width: 800px; Adjust as needed */
+    margin-bottom: 20px;
+}
 #intro-message h1 {
     font-size: 40px;
     font-style: normal;
@@ -152,7 +160,7 @@ header a:hover{
     font-size: 24px;
     font-style: normal;
     font-weight: 400;
-    line-height: 48px;
+    line-height: 36px;
 }
 
 #intro-placeholder {
@@ -179,13 +187,37 @@ header a:hover{
 }
 
 #card-grid .card img{
-    width:90%;
+    width:100%;
     opacity: 1;
+    border-radius: 5px;
 }
 
 #card-grid .card img:hover {
-    filter: grayscale(1);
+    filter: opacity(70%) contrast(150%);
     /* transition: filter 0.2s ease-in-out; */
+}
+
+#sub-pages{
+    background: var(--main-color-background);
+    padding-left:5%;
+    padding-right:5%;
+    padding-top:5%;
+    padding-bottom:5%;
+    z-index: 1;
+}
+
+#sub-pages .card{
+    float:left;
+    text-align:left;
+    width:30%;
+    margin: auto;
+    padding: 1%;
+    overflow:hidden;
+}
+
+#sub-pages .card img{
+    width:90%;
+    opacity: 1;
 }
 
 /* About page flex layout */
