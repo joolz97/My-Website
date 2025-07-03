@@ -1,13 +1,13 @@
 :root {
-    --main-color-background: #f7f7f7;
-    --main-color-background-alt: #742424;
+    --main-color-background: #ebe9e7;
+    --main-color-background-alt: #ebe9e7;
     --main-color-accent: #6b191d;
     --main-color-header: #f7f7f7;
     --main-color-text: # ;
-    --main-color-text-alt: #181B5B;
+    --main-color-text-alt: #000000;
     --main-radius: 20px;
     --main-shadow: 0 2px 8px rgba(0,0,0,0.05);
-    --main-font: 15px/1.5 sans-serif;
+    --main-font: 15px/1.5 Arial, Helvetica, sans-serif;
     --main-gap: 40px;
 }
 
@@ -75,6 +75,7 @@ header nav {
     transform: translateY(-50%);
     display: flex;
     align-items: center;
+    float: left;
 }
 
 header #branding {
@@ -96,6 +97,7 @@ header #branding img.animated-gif{
     width: auto;
     margin: 0 10px 0 0;
     display: block;
+    float: center;
 }
 
 header li{
@@ -127,27 +129,24 @@ header a:hover{
     height: 120px; /* Adjust as needed */
 }
 
-#intro-message {
-    color: var(--main-color-text);
+#showcase {
+    color: var(--main-color-text-alt);
     position: fixed;
     top: 0;
     z-index: 0;
-    /* left: 50%;
-    transform: translateX(-50%); */
     padding-top: 120px;
     text-align: center; 
     margin-top: 0px;
     margin-bottom: 16px;
     width: 100%;
+    min-height: 400px;
+    background: url('../img/treecircles.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
 }
 
-#intro-message img {
-    width: 100%;
-    height: auto;
-    /*max-width: 800px; Adjust as needed */
-    margin-bottom: 20px;
-}
-#intro-message h1 {
+#showcase h1 {
     font-size: 40px;
     font-style: normal;
     font-weight: 400;
@@ -156,7 +155,7 @@ header a:hover{
     margin-top: 115px;
 }
 
-#intro-message h2 {
+#showcase h2 {
     font-size: 24px;
     font-style: normal;
     font-weight: 400;
@@ -204,20 +203,23 @@ header a:hover{
     padding-top:5%;
     padding-bottom:5%;
     z-index: 1;
+    text-align: center;
 }
 
 #sub-pages .card{
-    float:left;
-    text-align:left;
-    width:30%;
-    margin: auto;
+    float:center;
+    text-align:center;
+    width:90%;
     padding: 1%;
     overflow:hidden;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 #sub-pages .card img{
-    width:90%;
+    width:100%;
     opacity: 1;
+    border-radius: 5px;
 }
 
 /* About page flex layout */
