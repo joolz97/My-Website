@@ -130,7 +130,7 @@ header a:hover{
 }
 
 #showcase {
-    color: var(--main-color-text-alt);
+    color: var(--main-color-background);
     position: fixed;
     top: 0;
     z-index: 0;
@@ -140,7 +140,7 @@ header a:hover{
     margin-bottom: 16px;
     width: 100%;
     min-height: 400px;
-    background: url('../img/treecircles.png');
+    background: url('../img/treecirclesmaroon.jpg');
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
