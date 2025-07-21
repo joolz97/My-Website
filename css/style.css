@@ -75,6 +75,7 @@ header nav {
     display: flex;
     align-items: center;
     float: left;
+    padding-left: 40px;
 }
 
 header #branding {
@@ -305,6 +306,7 @@ header a:hover{
         align-items: center;
         justify-content: center;
         width: 100%;
+        padding-left: 0px;
     }
 
     #header-placeholder {
