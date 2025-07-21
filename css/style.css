@@ -3,7 +3,7 @@
     --main-color-background-alt: #ebe9e7;
     --main-color-accent: #6b191d;
     --main-color-header: #f7f7f7;
-    --main-color-text: # ;
+    --main-color-text: #000000 ;
     --main-color-text-alt: #000000;
     --main-radius: 20px;
     --main-shadow: 0 2px 8px rgba(0,0,0,0.05);
@@ -139,14 +139,14 @@ header a:hover{
     margin-bottom: 16px;
     width: 100%;
     min-height: 400px;
-    background: url('../img/treecirclesmaroon.jpg');
+    background: url('../img/bkg4.JPG');
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
 }
 
 #showcase h1 {
-    font-size: 40px;
+    font-size: 38px;
     font-style: normal;
     font-weight: 400;
     line-height: 48px;
@@ -155,7 +155,7 @@ header a:hover{
 }
 
 #showcase h2 {
-    font-size: 24px;
+    font-size: 22px;
     font-style: normal;
     font-weight: 400;
     line-height: 36px;
@@ -163,7 +163,7 @@ header a:hover{
 
 #intro-placeholder {
     width: 100%;
-    height: 500px; /* Adjust as needed */
+    height: 430px; /* Adjust as needed */
 }
 
 #card-grid{
