@@ -60,11 +60,11 @@ header{
 
 header .container {
     position: relative;
-    width: 95%;
+    width: 100%;
     padding-top:10px;
     padding-bottom:10px;
     padding-left:40px;
-    padding-right:40px;
+    /* padding-right:40px; */
     height: 100px; /* adjust as needed for your header height */
 }
 
@@ -102,7 +102,7 @@ header #branding img.animated-gif{
 header li{
     float: none;
     display: inline-block;
-    padding: 0 16px 0 0;
+    padding: 0 8px 0 8px;
     text-decoration: none;
     font-size: 20px;
     /* text-transform: uppercase; */
@@ -139,7 +139,7 @@ header a:hover{
     margin-bottom: 16px;
     width: 100%;
     min-height: 400px;
-    background: url('../img/bkg4.JPG');
+    background: url('../img/bkg4.jpg');
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -304,11 +304,11 @@ header a:hover{
         display: flex;
         align-items: center;
         justify-content: center;
-        width: auto;
+        width: 100%;
     }
 
     #header-placeholder {
-        height: 150px; /* Adjust as needed */    
+        height: 140px; /* Adjust as needed */    
     }
 
     #card-grid .card {
